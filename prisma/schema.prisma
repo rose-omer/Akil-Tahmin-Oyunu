@@ -1,0 +1,30 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Game {
+  id                  String         @id @default(uuid())
+  playedAt            DateTime       @default(now())
+  prediction          String
+  isPredictionCorrect Boolean?       // Tahminin doğru olup olmadığını belirtir (true/false, null olabilir)
+  userCorrectAnswer   String?        // Eğer tahmin yanlışsa, kullanıcının aklındaki doğru cevap (isteğe bağlı)
+  gameQuestions       GameQuestion[] // Her oyunun soru-cevaplarını tutacak ilişki
+}
+
+model GameQuestion {
+  id            String   @id @default(uuid())
+  gameId        String   // Hangi oyuna ait olduğunu belirtir
+  game          Game     @relation(fields: [gameId], references: [id])
+  question      String   // Sorulan soru metni
+  answer        String   // Kullanıcının verdiği cevap (evet/hayır/biraz)
+  questionIndex Int      // Hangi sıradaki soru olduğu
+
+  @@unique([gameId, questionIndex]) // Bir oyunda aynı soru sırasının tekrarlanmamasını sağlar
+}
