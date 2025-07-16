@@ -61,7 +61,7 @@ Projeyi yerel makinenizde kurmak ve çalıştırmak için aşağıdaki adımlar�
     * `sizin_gemini_api_anahtarınız` kısmını Google AI Studio'dan alacağınız Gemini API anahtarınızla değiştirin.
     * `sizin_neon_veritabanı_bağlantı_urliniz` kısmını Neon Tech hesabınızdan alacağınız PostgreSQL bağlantı URL'nizle değiştirin.
 5.  **Veritabanı Şemasını Uygulayın (Gerekliyse):**
-    Eğer projenizde bir ORM (örneğin Prisma) kullanıyorsanız, veritabanı şemasını uygulamak için ilgili komutu çalıştırın:
+    Eğer projenizde bir ORM  kullanıyorsanız, veritabanı şemasını uygulamak için ilgili komutu çalıştırın:
     ```bash
     npx prisma db push # Prisma kullanıyorsanız
     ```
@@ -84,7 +84,7 @@ Projeyi yerel makinenizde kurmak ve çalıştırmak için aşağıdaki adımlar�
 * `app/api/game/route.ts`: Oyun verilerini **Neon Tech** destekli veritabanına kaydetmek için kullanılan API rotası.
 * `public/images/asdasd.jpg`: Arka plan görseli.
 * `app/globals.css`: Tailwind CSS ve özel global stiller.
-* `prisma/schema.prisma` (Örnek): Veritabanı şemasının tanımlandığı dosya (eğer Prisma gibi bir ORM kullanılıyorsa).
+* `prisma/schema.prisma` : Veritabanı şemasının tanımlandığı dosya 
 
 ---
 
