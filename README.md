@@ -87,6 +87,11 @@ Projeyi yerel makinenizde kurmak ve çalıştırmak için aşağıdaki adımlar�
 * `prisma/schema.prisma` : Veritabanı şemasının tanımlandığı dosya 
 
 ---
+## Ekran Resimleri 
+<img width="1900" height="857" alt="image" src="https://github.com/user-attachments/assets/8149ec6b-f56e-45cb-9ac3-ee20f24d9355" />
+<img width="1852" height="802" alt="image" src="https://github.com/user-attachments/assets/baf4ff89-7508-42d8-995b-6263ae08dc28" />
+<img width="1919" height="982" alt="image" src="https://github.com/user-attachments/assets/4582d505-462c-4d44-a971-cae50c822565" />
+<img width="1919" height="538" alt="image" src="https://github.com/user-attachments/assets/c21694a9-d7f8-4c19-9078-87a928efc5c9" />
 
 ## Katkıda Bulunma
 
